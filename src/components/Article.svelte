@@ -1,9 +1,11 @@
 <script>
+  import { assetPath } from '../assetPath.js';
+
   export let title = 'Prec\u012bza apr\u016bpe ar "AutoDose"';
   export let body = 'P\u0101r\u0101k daudz mazg\u0101\u0161anas l\u012bdzek\u013cu lieto\u0161ana var saboj\u0101t dr\u0113b\u0113s eso\u0161\u0101s \u0161\u0137iedras. Atcerieties, ka ve\u013cas daudzums un \u016bdens veids j\u016bsu apk\u0101rtn\u0113 ietekm\u0113s mazg\u0101\u0161anas l\u012bdzek\u013ca lieto\u0161anu.';
   export let linkText = 'Uzzinat vairak';
   export let href = '#';
-  export let imageUrl = '/images/article-41-4239.png';
+  export let imageUrl = assetPath('images/article-41-4239.png');
   export let showTitle = true;
   export let showBody = true;
   export let showLink = true;

@@ -1,10 +1,11 @@
 <script>
+  import { assetPath } from '../assetPath.js';
   export let expertName = 'Vārds Uzvārds';
   export let expertTitle = 'Vārds Uzvārds, ir pro veļas mašīnu eksperts';
   export let linkText = 'Uzzinat vairak';
   export let linkHref = '#';
 
-  const imgBg = '/images/article-card-bg.svg';
+  const imgBg = assetPath('images/article-card-bg.svg');
 </script>
 
 <article class="article-card">

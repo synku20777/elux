@@ -1,4 +1,5 @@
 <script>
+  import { assetPath } from '../assetPath.js';
   import CardDescription from './CardDescription.svelte';
   import CardSpecsTable from './CardSpecsTable.svelte';
   import StockIndicator from './StockIndicator.svelte';
@@ -34,10 +35,10 @@
   export let dryerEfficiencyLabel = '\u017d\u0101v\u0113t\u0101ja energoeffiktivit\u0101te';
   export let productSheetLabel = 'Ra\u017eojuma inform\u0101cijas lapa';
 
-  const imgProduct = '/images/product-washer.svg';
-  const imgStarFull = '/images/star-full.svg';
-  const imgStarHalf = '/images/star-half.svg';
-  const imgEnergyLabel = '/images/energy-label-a.png';
+  const imgProduct = assetPath('images/product-washer.svg');
+  const imgStarFull = assetPath('images/star-full.svg');
+  const imgStarHalf = assetPath('images/star-half.svg');
+  const imgEnergyLabel = assetPath('images/energy-label-a.png');
 
   $: stars = Array.from({ length: 5 }, (_, index) => index < rating ? 'full' : 'half');
   $: hasContent = contentVariant !== 'none';

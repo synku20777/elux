@@ -1,9 +1,10 @@
 <script>
+  import { assetPath } from '../assetPath.js';
   import ArticleCard from './ArticleCard.svelte';
   import SmallCard from './SmallCard.svelte';
 
-  const imgArrowLeft = '/images/arrow-left.svg';
-  const imgArrowRight = '/images/arrow-right.svg';
+  const imgArrowLeft = assetPath('images/arrow-left.svg');
+  const imgArrowRight = assetPath('images/arrow-right.svg');
 
   const picks = [1, 2, 3, 4, 5];
 

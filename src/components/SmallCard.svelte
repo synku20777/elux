@@ -1,4 +1,5 @@
 <script>
+  import { assetPath } from '../assetPath.js';
   import StockIndicator from './StockIndicator.svelte';
   import Tag from './Tag.svelte';
 
@@ -17,10 +18,10 @@
   export let showDryerEfficiency = true;
   export let showProductSheetLink = true;
 
-  const imgProduct = '/images/product-washer.svg';
-  const imgStarFull = '/images/star-full.svg';
-  const imgStarHalf = '/images/star-half.svg';
-  const imgEnergyLabel = '/images/energy-label-a.png';
+  const imgProduct = assetPath('images/product-washer.svg');
+  const imgStarFull = assetPath('images/star-full.svg');
+  const imgStarHalf = assetPath('images/star-half.svg');
+  const imgEnergyLabel = assetPath('images/energy-label-a.png');
   const fallbackTitle = 'Ve\u013cas ma\u0161\u012bna, 600.s\u0113rija "SensiCare", ar "AutoDose" funkciju, ietilp\u012bba 9kg';
   const fallbackPrice = '\u20ac45.52';
   const fallbackOriginalPrice = '\u20ac56.904';
