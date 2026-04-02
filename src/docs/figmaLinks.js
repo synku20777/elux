@@ -18,6 +18,10 @@ export const figmaLinks = {
     url: 'https://www.figma.com/design/M0unDHzmqnl1l9mBUoPD1y/Electrolux-Veikals--2nd-attempt-?node-id=40-2465&m=dev',
     label: 'Open Tag in Figma',
   },
+  category: {
+    url: 'https://www.figma.com/design/M0unDHzmqnl1l9mBUoPD1y/Electrolux-Veikals--2nd-attempt-?node-id=176-16446&m=dev',
+    label: 'Open Category in Figma',
+  },
   article: {
     url: 'https://www.figma.com/design/M0unDHzmqnl1l9mBUoPD1y/Electrolux-Veikals--2nd-attempt-?node-id=41-4239&m=dev',
     label: 'Open Article in Figma',

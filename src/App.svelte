@@ -6,6 +6,7 @@
   import LinkPage            from './docs/LinkPage.svelte';
   import TabsPage            from './docs/TabsPage.svelte';
   import TagPage             from './docs/TagPage.svelte';
+  import CategoryPage        from './docs/CategoryPage.svelte';
   import ArticlePage         from './docs/ArticlePage.svelte';
   import InputFieldPage      from './docs/InputFieldPage.svelte';
   import ButtonPage          from './docs/ButtonPage.svelte';
@@ -44,6 +45,7 @@
     {
       group: 'Organisms',
       items: [
+        { id: 'category',        label: 'Category'      },
         { id: 'article',         label: 'Article'       },
         { id: 'small-card',      label: 'SmallCard'     },
         { id: 'big-card',        label: 'BigCard'       },
@@ -59,6 +61,7 @@
     link:              LinkPage,
     tabs:              TabsPage,
     tag:               TagPage,
+    category:          CategoryPage,
     article:           ArticlePage,
     'input-field':     InputFieldPage,
     button:            ButtonPage,
