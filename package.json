@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@emnapi/core": "^1.9.1",
+    "@emnapi/runtime": "^1.9.1",
     "@sveltejs/vite-plugin-svelte": "^7.0.0",
     "sass": "^1.98.0",
     "svelte": "^5.53.12",
