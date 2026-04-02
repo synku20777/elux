@@ -1,28 +1,32 @@
 <script>
   /** @type {'Default' | 'Secondary' | 'Border' | 'Ghost' | 'Disabled'} */
   export let type = 'Default';
+  /** @type {'Default' | 'Hover'} */
+  export let state = 'Default';
   export let label = 'Press me';
   export let iconStart = true;
   export let iconEnd = true;
   export let onclick = undefined;
 
-  const disabled = type === 'Disabled';
-
   const variants = {
     Default:   { bg: 'var(--primary)',       hover: 'var(--primary-hover)',   color: 'var(--primary-foreground)',   border: 'none' },
     Secondary: { bg: 'var(--secondary)',     hover: 'var(--secondary-hover)', color: 'var(--secondary-foreground)', border: 'none' },
-    Border:    { bg: 'var(--card)',          hover: 'var(--surface-sunk)',    color: 'var(--accent-foreground)',    border: '1px solid var(--border)' },
-    Ghost:     { bg: 'transparent',          hover: 'var(--surface-sunk)',    color: 'var(--accent-foreground)',    border: 'none' },
+    Border:    { bg: 'transparent',          hover: 'var(--surface-raised)',  color: 'var(--neutral-foreground)',   border: '1px solid var(--border)' },
+    Ghost:     { bg: 'transparent',          hover: 'var(--surface-muted)',   color: 'var(--neutral-foreground)',   border: 'none' },
     Disabled:  { bg: 'var(--surface-muted)', hover: 'var(--surface-muted)',  color: 'var(--secondary)',            border: 'none' },
   };
 
-  $: v = variants[type] ?? variants.Default;
+  $: disabled = type === 'Disabled';
+  $: isHover = state === 'Hover' && !disabled;
+  $: variant = variants[type] ?? variants.Default;
+  $: background = isHover ? variant.hover : variant.bg;
 </script>
 
 <button
   class="btn"
   class:is-disabled={disabled}
-  style="--_bg:{v.bg}; --_hover:{v.hover}; --_color:{v.color}; --_border:{v.border}"
+  class:is-hover={isHover}
+  style="--_bg:{background}; --_hover:{variant.hover}; --_color:{variant.color}; --_border:{variant.border}"
   {disabled}
   on:click={!disabled ? onclick : undefined}
 >
@@ -55,6 +59,7 @@
     align-items: center;
     justify-content: center;
     gap: var(--space-3);
+    min-height: 44px;
     padding: var(--space-4) var(--space-5);
     border-radius: var(--radius-200);
     border: var(--_border);
@@ -64,12 +69,13 @@
     font-size: var(--scale-03);
     font-weight: var(--weight-semibold);
     line-height: 1.2;
+    letter-spacing: var(--kerning-paragraph);
     white-space: nowrap;
     cursor: pointer;
     transition: background 0.15s ease;
     overflow: hidden;
 
-    &:not(.is-disabled):hover {
+    &:not(.is-disabled):not(.is-hover):hover {
       background: var(--_hover);
     }
 

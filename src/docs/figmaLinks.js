@@ -27,7 +27,7 @@ export const figmaLinks = {
     label: 'Open InputField in Figma',
   },
   button: {
-    url: fallbackFigmaUrl,
+    url: 'https://www.figma.com/design/M0unDHzmqnl1l9mBUoPD1y/Electrolux-Veikals--2nd-attempt-?node-id=40-2663&m=dev',
     label: 'Open Button in Figma',
   },
   iconButton: {

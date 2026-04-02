@@ -12,6 +12,7 @@
     { var: '--space-8',  value: 32 },
     { var: '--space-9',  value: 40 },
     { var: '--space-10', value: 48 },
+    { var: '--space-20', value: 156 },
   ];
 
   const radius = [
@@ -34,7 +35,7 @@
     { name: 'Huge',   var: '--icon-huge',   value: 64, cssName: '--sds-size-icon-large' },
   ];
 
-  const maxBar = 48;
+  const maxBar = 156;
 </script>
 
 <div>

@@ -33,18 +33,18 @@ $neutral-900: #0f1117;
 $neutral-950: #020305;
 
 // --- Color Primitives: Semantic ---
-$yellow-100: #fef9c2;
-$yellow-300: #ffdf20;
-$yellow-700: #a65f00;
+$yellow-100: #fef3c6;
+$yellow-300: #ffd230;
+$yellow-700: #d08700;
 
-$blue-100: #dbeafe;
-$blue-700: #1447e6;
+$blue-100: #e0e7ff;
+$blue-700: #4f39f6;
 
 $red-100: #ffe2e2;
 $red-700: #c10007;
 
-$green-200: #dcfce7;
-$green-700: #00a63e;
+$green-200: #d0fae5;
+$green-700: #009966;
 
 // ============================================================
 // CSS Custom Properties (Semantic Tokens — Default mode)
@@ -62,18 +62,22 @@ $green-700: #00a63e;
   --secondary-foreground: #{$brand-700};  // #2d4776
 
   // Base
-  --background:     #{$neutral-2};    // #f8f9fc
-  --foreground:     #{$brand-900};    // #031336
-  --card:           #{$neutral-00};   // #ffffff
-  --muted-foreground: #{$brand-500};  // #5c76a4
+  --background:             #{$neutral-2};    // #f8f9fc
+  --foreground:             #{$brand-900};    // #031336
+  --neutral-foreground:     #{$neutral-900};  // #0f1117
+  --card:                   #{$neutral-00};   // #ffffff
+  --muted-foreground:       #{$brand-600};    // #435e8f
+  --muted-foreground-card:  #{$brand-500};    // #5c76a4
+  --muted-foreground-bg:    #{$brand-600};    // #435e8f
 
   // Surfaces
-  --surface-muted:  #{$neutral-50};   // #f3f5fa
+  --surface-muted:  #{$brand-50};     // #e9f6ff
   --surface-raised: #{$neutral-00};   // #ffffff
-  --surface-sunk:   #{$neutral-100};  // #d6d8dd
+  --surface-sunk:   #{$brand-100};    // #ccdbf5
 
   // Borders
-  --border:         #{$neutral-100};  // #d6d8dd
+  --border:         #{$neutral-200};  // #b9bbc1
+  --border-subtle:  #{$neutral-100};  // #d6d8dd
   --ring:           #{$brand-700};    // #2d4776
 
   // Accent
@@ -119,6 +123,8 @@ $green-700: #00a63e;
   --scale-09: 40px;  // h2
   --scale-10: 50px;  // h1
   --scale-11: 20px;
+  --kerning-paragraph: -0.3px;
+  --kerning-display: -0.66px;
 
   // ---- Spacing (from Spacing Primitive/Mode 1) ----
   --space-0:  0px;
@@ -132,6 +138,7 @@ $green-700: #00a63e;
   --space-8:  32px;
   --space-9:  40px;
   --space-10: 48px;
+  --space-20: 156px;
 
   // ---- Radius ----
   --radius-100:  4px;
@@ -158,3 +165,5 @@ $font-family:     var(--font-family);
 $weight-regular:  var(--weight-regular);
 $weight-semibold: var(--weight-semibold);
 $line-height:     1.2;
+$kerning-paragraph: var(--kerning-paragraph);
+$kerning-display: var(--kerning-display);
