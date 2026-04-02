@@ -1,0 +1,160 @@
+// ============================================================
+// Electrolux Design System — Tokens
+// Source: tokens_electrolux.json
+// ============================================================
+
+// --- Color Primitives: Brand ---
+$brand-01:  #f5fbff;
+$brand-50:  #e9f6ff;
+$brand-100: #ccdbf5;
+$brand-200: #afc1e0;
+$brand-300: #93a7cb;
+$brand-400: #788eb6;
+$brand-500: #5c76a4;
+$brand-600: #435e8f;
+$brand-700: #2d4776;
+$brand-800: #152c56;
+$brand-900: #031336;
+$brand-950: #000019;
+
+// --- Color Primitives: Neutral ---
+$neutral-00:  #ffffff;
+$neutral-2:   #f8f9fc;
+$neutral-50:  #f3f5fa;
+$neutral-100: #d6d8dd;
+$neutral-200: #b9bbc1;
+$neutral-300: #9d9fa6;
+$neutral-400: #82858c;
+$neutral-500: #676b73;
+$neutral-600: #4e525b;
+$neutral-700: #373a42;
+$neutral-800: #21242b;
+$neutral-900: #0f1117;
+$neutral-950: #020305;
+
+// --- Color Primitives: Semantic ---
+$yellow-100: #fef9c2;
+$yellow-300: #ffdf20;
+$yellow-700: #a65f00;
+
+$blue-100: #dbeafe;
+$blue-700: #1447e6;
+
+$red-100: #ffe2e2;
+$red-700: #c10007;
+
+$green-200: #dcfce7;
+$green-700: #00a63e;
+
+// ============================================================
+// CSS Custom Properties (Semantic Tokens — Default mode)
+// Reference: Color Semantic/Default
+// ============================================================
+:root {
+  // Primary
+  --primary:            #{$brand-700};    // #2d4776
+  --primary-hover:      #{$brand-800};    // #152c56
+  --primary-foreground: #{$neutral-00};   // #ffffff
+
+  // Secondary
+  --secondary:            #{$brand-100};  // #ccdbf5
+  --secondary-hover:      #{$brand-200};  // #afc1e0
+  --secondary-foreground: #{$brand-700};  // #2d4776
+
+  // Base
+  --background:     #{$neutral-2};    // #f8f9fc
+  --foreground:     #{$brand-900};    // #031336
+  --card:           #{$neutral-00};   // #ffffff
+  --muted-foreground: #{$brand-500};  // #5c76a4
+
+  // Surfaces
+  --surface-muted:  #{$neutral-50};   // #f3f5fa
+  --surface-raised: #{$neutral-00};   // #ffffff
+  --surface-sunk:   #{$neutral-100};  // #d6d8dd
+
+  // Borders
+  --border:         #{$neutral-100};  // #d6d8dd
+  --ring:           #{$brand-700};    // #2d4776
+
+  // Accent
+  --accent:            #{$neutral-50};   // #f3f5fa
+  --accent-foreground: #{$neutral-900};  // #0f1117
+
+  // Status — Destructive
+  --destructive:    #{$red-700};      // #c10007
+  --destructive-fg: #{$neutral-00};   // #ffffff
+
+  // Status — Positive
+  --positive:       #{$green-200};    // #dcfce7
+  --positive-fg:    #{$green-700};    // #00a63e
+
+  // Status — Promo
+  --promo:    #{$red-100};            // #ffe2e2
+  --promo-fg: #{$red-700};            // #c10007
+
+  // Status — Info
+  --info:    #{$blue-100};            // #dbeafe
+  --info-fg: #{$blue-700};            // #1447e6
+
+  // Rating
+  --rating:       #{$yellow-300};     // #ffdf20
+  --empty-rating: #{$brand-50};       // #e9f6ff
+
+  // ---- Typography ----
+  --font-family: 'Montserrat', sans-serif;
+  --weight-regular:  400;
+  --weight-semibold: 600;
+  --line-height:     1.2;
+
+  // Font scale (from Typography Primitives/Mode 1)
+  --scale-00: 11px;  // text-s
+  --scale-01: 13px;  // small label
+  --scale-02: 14px;  // text-m / body
+  --scale-03: 16px;  // text-l
+  --scale-04: 18px;
+  --scale-05: 23px;  // h6
+  --scale-06: 26px;  // h5
+  --scale-07: 29px;  // h4
+  --scale-08: 32px;  // h3
+  --scale-09: 40px;  // h2
+  --scale-10: 50px;  // h1
+  --scale-11: 20px;
+
+  // ---- Spacing (from Spacing Primitive/Mode 1) ----
+  --space-0:  0px;
+  --space-1:  2px;
+  --space-2:  4px;
+  --space-3:  8px;
+  --space-4:  12px;
+  --space-5:  16px;
+  --space-6:  20px;
+  --space-7:  24px;
+  --space-8:  32px;
+  --space-9:  40px;
+  --space-10: 48px;
+
+  // ---- Radius ----
+  --radius-100:  4px;
+  --radius-200:  8px;
+  --radius-400:  16px;
+  --radius-800:  48px;
+  --radius-full: 9999px;
+
+  // Stroke
+  --stroke-border:     1px;
+  --stroke-focus-ring: 2px;
+
+  // ---- Icon sizes ----
+  --icon-small:  24px;
+  --icon-medium: 32px;
+  --icon-large:  40px;
+  --icon-huge:   64px;
+}
+
+// ============================================================
+// SCSS shorthands (reference CSS vars for usage in SCSS context)
+// ============================================================
+$font-family:     var(--font-family);
+$weight-regular:  var(--weight-regular);
+$weight-semibold: var(--weight-semibold);
+$line-height:     1.2;

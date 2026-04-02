@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+  <defs>
+    <clipPath id="half-star-fill">
+      <rect width="8" height="16"/>
+    </clipPath>
+  </defs>
+  <path d="M8 1.4 10 5.46l4.48.65-3.24 3.15.76 4.45L8 11.58 4 13.71l.76-4.45L1.52 6.1 6 5.46 8 1.4Z" fill="#E9F6FF"/>
+  <path d="M8 1.4 10 5.46l4.48.65-3.24 3.15.76 4.45L8 11.58 4 13.71l.76-4.45L1.52 6.1 6 5.46 8 1.4Z" fill="#FFDF20" clip-path="url(#half-star-fill)"/>
+</svg>
